@@ -150,7 +150,8 @@ h2{
 3. Total SpendはLimitを超えたら、お知らせを出す
 4. バッジでTotal Spendの値を表示する
 5. 任意ページで数字をセレクトして、右クリック通してTotal Spendに加える
-  ![BudgetManager](readme/BudgetManager.png)
+
+![BudgetManager](readme/BudgetManager.png)
 
 ### 2.2 実装
 
