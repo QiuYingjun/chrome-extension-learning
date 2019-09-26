@@ -252,6 +252,9 @@ $(function(){
 <!-- popup.htmlのheadタッグに追加 -->
 <script src='popup.js'></script>
 ```
+* 結果
+
+<img src="readme/add.gif" alt="add" style="zoom:50%;" />
 
 #### 2.2.2 オプションページでtotalとlimitをセットする
 
@@ -306,6 +309,10 @@ $(function(){
 "options_page":"options.html"
 ```
 
+* 結果
+
+![optionpage](readme/optionpage.gif)
+
 #### 2.2.3 Total SpendはLimitを超えたら、お知らせを出す
 
 * manifest.xmlの権限を更新する
@@ -334,6 +341,10 @@ chrome.storage.sync.set({'total':newTotal},function(){
     }
 });
 ```
+
+* 結果
+
+  ![notification](readme/notification.gif)
 
 #### 2.2.4 ページで数字をセレクトして、右クリック通してTotal Spendに加える
 
@@ -395,6 +406,10 @@ chrome.contextMenus.onClicked.addListener(function (clickData) {
     }
 });
 ```
+
+* 結果
+
+![rightclick](readme/rightclick.gif)
 
 #### 2.2.5 バッジでTotal Spendの値を表示する
 
