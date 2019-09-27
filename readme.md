@@ -18,7 +18,7 @@ chromeの拡張を開発する時、四つ種類のファイルは必要だ。
 
 | ファイル種類 | 用途                                                         |
 | ------------ | ------------------------------------------------------------ |
-| manifest     | 拡張の名、バージョン、ロコ、説明を指定する<br />ポップアップ画面を指定する |
+| manifest     | 拡張の名、バージョン、アイコン、説明を指定する<br />ポップアップ画面を指定する |
 | html         | 拡張の画面                                                   |
 | css          | 拡張の画面のスタイル                                         |
 | javascrip    | 拡張のロジック                                               |
@@ -43,7 +43,7 @@ chromeの拡張を開発する時、四つ種類のファイルは必要だ。
 プロジェクトフォルダに８つのファイルあります。
 
 ```sh
-G:\ONEDRIVE\文档\CHROME拡張\HELLOWORLD
+G:\ONEDRIVE\文档\chrome-extension-learning\HelloWorld
     icon16.png
     icon48.png
     icon128.png
@@ -200,7 +200,7 @@ h2{
 
 #### 2.2.1 データの保存と表示
 
-この機能はデータの読み込みと書き込み操作を依頼する。初めは`total`は0にセットして、`limit`は100にセットする。数字を入力して`Spend`をクリックすると、新しい総費用は画面で更新される同時に、ストレージで保存される。
+この機能はデータの読み込みと書き込み操作を依頼する。初めは`total`は0にセットして、`limit`は100にセットする。数字を入力して`Spend`をクリックすると、新しい`total`は画面で更新される同時に、ストレージで保存される。
 
 * manifest.jsonにストレージの権限を追加する。参考：https://developer.chrome.com/apps/storage
 
@@ -210,7 +210,7 @@ h2{
 ]
 ```
 
-* popup.jsを編集したら、popup.htmlに追加
+* popup.jsを編集したあと、popup.htmlに導入する
 
 ```js
 $(function(){
@@ -319,9 +319,7 @@ $(function(){
 
 ```json
 "permissions": [
-    "storage",
-    "notifications",
-    "contextMenus"
+    "notifications"
 ]
 ```
 
